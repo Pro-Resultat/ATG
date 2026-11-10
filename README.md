@@ -1,3 +1,0 @@
-# yistyk-pages
-# ATG
-# ATG

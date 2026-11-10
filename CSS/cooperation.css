@@ -1,0 +1,340 @@
+.coop {
+    --coop-bg: #121212;
+    --coop-card: #1e1e1e;
+    --coop-card-2: #2a2a2a;
+    --coop-accent: #e50914;
+    --coop-accent-hover: #ff1e27;
+    --coop-text: #ffffff;
+    --coop-muted: #b8b8b8;
+    --coop-radius: 16px;
+  
+    background: var(--coop-bg);
+    color: var(--coop-text);
+    font-weight: 400;
+    line-height: 1.6;
+    padding: 32px 0 56px;
+  }
+  
+  .coop *,
+  .coop *::before,
+  .coop *::after {
+    box-sizing: border-box;
+  }
+  
+  .coop__container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+  /* ---------- Кнопки ---------- */
+  .coop-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 52px;
+    padding: 0 32px;
+    border: 0;
+    border-radius: 10px;
+    background: var(--coop-accent);
+    color: var(--coop-text);
+    font: inherit;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+  }
+  
+  .coop-btn:hover {
+    background: var(--coop-accent-hover);
+  }
+  
+  .coop-btn:active {
+    transform: translateY(1px);
+  }
+  
+  .coop-btn:focus-visible,
+  .coop-field input:focus-visible,
+  .coop-field select:focus-visible {
+    outline: 2px solid var(--coop-accent-hover);
+    outline-offset: 2px;
+  }
+  
+  .coop-btn--block {
+    width: 100%;
+  }
+  
+  /* ---------- 1. Hero ---------- */
+  .coop-hero {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 28px 20px;
+    background: linear-gradient(120deg, #0a0a0a 0%, var(--coop-card) 60%, #240609 100%);
+    border: 1px solid var(--coop-card-2);
+    border-radius: 20px;
+  }
+  
+  .coop-hero__title {
+    margin: 0 0 12px;
+    font-size: 32px;
+    line-height: 1.15;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+  }
+  
+  .coop-hero__title span {
+    color: var(--coop-accent);
+  }
+  
+  .coop-hero__subtitle {
+    margin: 0 0 16px;
+    font-size: 18px;
+    line-height: 1.4;
+    font-weight: 500;
+    color: var(--coop-accent-hover);
+  }
+  
+  .coop-hero__text {
+    margin: 0 0 28px;
+    max-width: 520px;
+    font-size: 16px;
+    color: var(--coop-muted);
+  }
+  
+  .coop-hero__media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 220px;
+    border-radius: var(--coop-radius);
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px dashed var(--coop-card-2);
+    overflow: hidden;
+  }
+  
+  .coop-hero__media img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: contain;
+  }
+  
+  /* ---------- 2. Переваги ---------- */
+  .coop-benefits {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .coop-card {
+    padding: 24px;
+    background: var(--coop-card);
+    border: 1px solid var(--coop-card-2);
+    border-radius: var(--coop-radius);
+    transition: border-color 0.2s ease, transform 0.2s ease;
+  }
+  
+  .coop-card:hover {
+    border-color: var(--coop-accent);
+    transform: translateY(-2px);
+  }
+  
+  .coop-card__icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    margin-bottom: 16px;
+    border-radius: 12px;
+    background: rgba(229, 9, 20, 0.12);
+    color: var(--coop-accent-hover);
+  }
+  
+  .coop-card__icon svg {
+    width: 28px;
+    height: 28px;
+  }
+  
+  .coop-card__title {
+    margin: 0 0 8px;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  
+  .coop-card__text {
+    margin: 0;
+    font-size: 15px;
+    color: var(--coop-muted);
+  }
+  
+  /* ---------- 3. Форма ---------- */
+  .coop-form-block {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    padding: 28px 20px;
+    background: var(--coop-card);
+    border: 1px solid var(--coop-card-2);
+    border-radius: 20px;
+  }
+  
+  .coop-form-block__title {
+    margin: 0 0 12px;
+    padding-left: 16px;
+    border-left: 3px solid var(--coop-accent);
+    font-size: 26px;
+    line-height: 1.2;
+    font-weight: 600;
+  }
+  
+  .coop-form-block__note {
+    margin: 0;
+    font-size: 15px;
+    color: var(--coop-muted);
+  }
+  
+  .coop-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .coop-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .coop-field label {
+    font-size: 14px;
+    color: var(--coop-text);
+  }
+  
+  .coop-field input,
+  .coop-field select {
+    width: 100%;
+    height: 48px;
+    padding: 0 14px;
+    background: #121212;
+    border: 1px solid #3a3a3a;
+    border-radius: 10px;
+    color: var(--coop-text);
+    font: inherit;
+    font-size: 15px;
+    transition: border-color 0.2s ease;
+  }
+  
+  .coop-field input::placeholder {
+    color: #8a8a8a;
+  }
+  
+  .coop-field input:hover,
+  .coop-field select:hover {
+    border-color: #5a5a5a;
+  }
+  
+  .coop-field input:focus,
+  .coop-field select:focus {
+    border-color: var(--coop-accent);
+  }
+  
+  .coop-field select {
+    appearance: none;
+    padding-right: 40px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23b8b8b8' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+  }
+  
+  .coop-form__hint {
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.5;
+    color: var(--coop-muted);
+  }
+  
+  /* ---------- Планшет ≥ 768px ---------- */
+  @media (min-width: 768px) {
+    .coop {
+      padding: 48px 0 72px;
+    }
+  
+    .coop__container {
+      padding: 0 24px;
+      gap: 32px;
+    }
+  
+    .coop-hero {
+      flex-direction: row;
+      align-items: center;
+      gap: 40px;
+      padding: 48px;
+    }
+  
+    .coop-hero__content,
+    .coop-hero__media {
+      flex: 1 1 0;
+      min-width: 0;
+    }
+  
+    .coop-hero__title {
+      font-size: 40px;
+    }
+  
+    .coop-hero__subtitle {
+      font-size: 20px;
+    }
+  
+    .coop-benefits {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
+    .coop-form-block {
+      flex-direction: row;
+      gap: 48px;
+      padding: 40px;
+    }
+  
+    .coop-form-block__intro {
+      flex: 1 1 0;
+    }
+  
+    .coop-form {
+      flex: 1.5 1 0;
+    }
+  
+    .coop-btn--block {
+      width: 100%;
+    }
+  }
+  
+  /* ---------- Десктоп ≥ 1200px ---------- */
+  @media (min-width: 1200px) {
+    .coop-hero__title {
+      font-size: 48px;
+    }
+  
+    .coop-hero__media {
+      min-height: 360px;
+    }
+  }
+  
+  /* ---------- Менше анімацій за налаштуванням користувача ---------- */
+  @media (prefers-reduced-motion: reduce) {
+    .coop *,
+    .coop *::before,
+    .coop *::after {
+      transition: none !important;
+    }
+  }
