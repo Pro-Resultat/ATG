@@ -40,7 +40,7 @@
     border: 0;
     border-radius: 10px;
     background: var(--coop-accent);
-    color: var(--coop-text);
+    color: var(--coop-text) !important;
     font: inherit;
     font-size: 16px;
     font-weight: 500;
