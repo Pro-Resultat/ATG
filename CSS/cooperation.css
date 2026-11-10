@@ -252,6 +252,11 @@
   .coop-field select:focus {
     border-color: var(--coop-accent);
   }
+
+  .coop-field input:active,
+  .coop-field select:active {
+    border-color: var(--coop-accent);
+  }
   
   .coop-field select {
     appearance: none;
