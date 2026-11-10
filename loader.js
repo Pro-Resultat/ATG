@@ -15,16 +15,15 @@
     // 2. Файли під конкретні сторінки (додавайте нові за потреби)
     const pageRoutes = [
         {
-            // Сторінка співробітництва (https://atg.in.ua/spivrobitnytsto/)
-            match: (url) => url.includes('/spivrobitnytsto'),
+            // Спрацює і на /spivrobitnytsto, і на /spivrobitnytsto/
+            match: (url) => url.toLowerCase().includes('spivrobitnytsto'),
             css: [
-                'css/cooperation.css' // назва та шлях можуть бути довільними
+                'css/cooperation.css'
             ],
             js: [
-                'js/cooperation.js'   // назва та шлях можуть бути довільними
+                'js/cooperation.js'
             ]
         }
-        // У майбутньому сюди просто додаєте новий блок { match: ..., css: [...], js: [...] }
     ];
 
     // Допоміжні функції для динамічного вставляння тегів
