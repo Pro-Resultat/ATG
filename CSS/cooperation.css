@@ -61,7 +61,6 @@
   .coop-btn:focus-visible,
   .coop-field input:focus-visible,
   .coop-field select:focus-visible {
-    outline: 2px solid var(--coop-accent-hover);
     outline-offset: 2px;
   }
   
