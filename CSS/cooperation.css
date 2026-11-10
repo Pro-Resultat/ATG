@@ -1,4 +1,4 @@
-.coop {
+:root {
     --coop-bg: #121212;
     --coop-card: #1e1e1e;
     --coop-card-2: #2a2a2a;
@@ -7,8 +7,9 @@
     --coop-text: #ffffff;
     --coop-muted: #b8b8b8;
     --coop-radius: 16px;
-  
-    color: var(--coop-text);
+}
+.coop {
+    color: var(--coop-text) !important;
     font-weight: 400;
     line-height: 1.6;
     padding: 32px 0 56px;
