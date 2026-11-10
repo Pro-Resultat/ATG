@@ -8,7 +8,6 @@
     --coop-muted: #b8b8b8;
     --coop-radius: 16px;
   
-    background: var(--coop-bg);
     color: var(--coop-text);
     font-weight: 400;
     line-height: 1.6;
