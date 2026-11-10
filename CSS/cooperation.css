@@ -143,6 +143,10 @@
     border-radius: var(--coop-radius);
     transition: border-color 0.2s ease, transform 0.2s ease;
   }
+
+  .coop-card::after {
+    content: none !important;
+  }
   
   .coop-card:hover {
     border-color: var(--coop-accent);
