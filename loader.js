@@ -30,10 +30,16 @@
     // Допоміжні функції для динамічного вставляння тегів
     function injectCSS(filePath) {
         if (!filePath) return;
+        // Перевірка, щоб не дублювати підключення
+        const fullUrl = `${BASE_URL}/${filePath.replace(/^\//, '')}?v=${Date.now()}`;
+        
         const link = document.createElement('link');
         link.rel = 'stylesheet';
-        link.href = `${BASE_URL}/${filePath.replace(/^\//, '')}`;
+        link.type = 'text/css';
+        link.href = fullUrl;
+        
         document.head.appendChild(link);
+        console.log('ATG Loader: Loaded CSS ->', fullUrl);
     }
 
     function injectJS(filePath) {
