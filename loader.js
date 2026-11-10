@@ -18,10 +18,10 @@
             // Спрацює і на /spivrobitnytsto, і на /spivrobitnytsto/
             match: (url) => url.toLowerCase().includes('spivrobitnytsto'),
             css: [
-                'css/cooperation.css'
+                'CSS/cooperation.css'
             ],
             js: [
-                'js/cooperation.js'
+                'JS/cooperation.js'
             ]
         }
     ];
